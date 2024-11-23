@@ -1,46 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Poppins, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
 }
 
-.container{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    color: white;
-    
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+  gap: 3px;
+  background-color: #d4a373;
+  letter-spacing: 2px;
 }
 
-.to-do{
-    background-color: rgb(165, 163, 160);
+.to-do {
+  background-color: #bcb8b1;
 }
 
-.in-progress{
-    background-color: rgb(197, 125, 16);
+.in-progress {
+  background-color: #9c6644;
 }
 
-.done{
-    background-color: green;
+.done {
+  background-color: #38b000;
 }
 
-.block{
-    background-color: red;
+.block {
+  background-color: #d00000;
 }
 
-.to-do-title{
-    text-align: center;
-    border-bottom:  2px solid rgb(182, 179, 179); 
-    font-size: 30px;
+.to-do-title {
+  text-align: center;
+  border-bottom: 3px solid #d4a373;
+  font-size: 30px;
 }
-.to-do-cards{
-    margin-left: 5px;
+.cards {
+  margin-left: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.to-do-card{
-    border: 1px solid black;
+.card {
+  padding: 10px;
+  margin-top: 8px;
+  margin-right: 4px;
+  border: 1px solid black;
+  display: flex;
+}
+
+p{
+    margin-left: 10px;
 }
