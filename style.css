@@ -8,37 +8,32 @@
 }
 
 .container {
+  padding-top: 1rem;
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 9fr; /* CONTAINERIN ALTINDAKİ ELEMANLARI BÖLMEYE 
+  YARAR, 1E9 ORANI BİZİM SEÇTİĞİMİZ, 2YE 30 DA VEREBİLİRİZ.*/
   color: white;
   gap: 3px;
   background-color: #d4a373;
   letter-spacing: 2px;
 }
 
-
-.add-task{
+.add-task {
   display: flex;
   justify-content: center;
-  grid-row: span 4 ;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #5a3c28;
   width: 100%;
-  grid-column: span 4;
-  grid-row: 1/2;
-  
 }
 
-.add-task input{
-  width: 50%;
-  height: 10%;
+.add-task input {
+  padding: 10px;
   border: none;
   border-radius: 9px;
 }
 
-.add-task button{
+.add-task button {
   margin-left: 20px;
   padding: 10px;
   width: 15%;
@@ -49,13 +44,15 @@
   border: none;
   color: #fff;
   cursor: pointer;
-
 }
 
-.add-task button:hover{
+.add-task button:hover {
   background-color: #9c6644;
 }
-
+.to-do-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 .to-do {
   background-color: #bcb8b1;
 }
@@ -88,10 +85,10 @@
   padding: 10px;
   margin-top: 8px;
   margin-right: 4px;
-  border: 1px solid black;
   display: flex;
+  border-bottom: 1px solid wheat;
 }
 
-p{
-    margin-left: 10px;
+p {
+  margin-left: 10px;
 }
